@@ -24,5 +24,9 @@ class AuthViewModel(
     ) = viewModelScope.launch {
         _loginResponse.value = repository.login(email, googleId, loginType)
     }
+    
+    fun googleLogin(){
+
+    }
 
 }
